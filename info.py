@@ -47,6 +47,11 @@ SHORTLINK_URL=None
 SHORTLINK_API=None
 IS_SHORTLINK=None
 # Bot information
+#Auto approve 
+#In private group or channel must enable request admin approval 
+CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id for app_chat_id in environ.get('CHAT_ID', '').split()]
+TEXT = environ.get("APPROVED_WELCOME_TEXT", "Hello {mention}\nWelcome To {title}\n\nYour request has been approved")
+APPROVED = environ.get("APPROVED_WELCOME", "off").lower()
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '6620972'))
 API_HASH = environ.get('API_HASH', '3f6835286b03e000ab6d71b37cc35b92')
