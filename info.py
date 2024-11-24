@@ -53,6 +53,7 @@ CHAT_ID = [int(app_chat_id) if id_pattern.search(app_chat_id) else app_chat_id f
 TEXT = environ.get("APPROVED_WELCOME_TEXT", "Hello {mention}\nWelcome To {title}\n\nYour request has been approved")
 APPROVED = environ.get("APPROVED_WELCOME", "off").lower()
 SESSION = environ.get('SESSION', 'Media_search')
+SUPPORT_CHAT_ID=""
 API_ID = int(environ.get('API_ID', '6620972'))
 API_HASH = environ.get('API_HASH', '3f6835286b03e000ab6d71b37cc35b92')
 BOT_TOKEN = environ.get('BOT_TOKEN', '5510874505:AAFlN6GOFKJEFpK_CM7QbBSGAqcf7AFCzNo')
