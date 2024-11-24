@@ -43,6 +43,9 @@ class evamaria(Client):
             sleep_threshold=60
         )
 
+SHORTLINK_URL=None
+SHORTLINK_API=None
+IS_SHORTLINK=None
 # Bot information
 SESSION = environ.get('SESSION', 'Media_search')
 API_ID = int(environ.get('API_ID', '6620972'))
